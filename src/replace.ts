@@ -1,6 +1,6 @@
 import postcss from 'postcss';
 import memoize from 'memoizerific';
-import px2vw from 'postcss-px-to-viewport'; //TODO: upgrade to 8 version wait postcss-px-to-viewport support
+import px2vw8plugin from 'postcss-px-to-viewport-8-plugin';
 import { IPx2VwOptions } from '../types/options';
 
 import configuration from './configuration';
@@ -22,7 +22,7 @@ function process(css: string): string {
   const options: IPx2VwOptions = {
     ...others,
   };
-  return postcss([px2vw(options)]).process(css, {
+  return postcss([px2vw8plugin(options)]).process(css, {
     // syntax: scss,
   }).css;
 }

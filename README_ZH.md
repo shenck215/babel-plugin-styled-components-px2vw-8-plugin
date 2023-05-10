@@ -1,19 +1,13 @@
-# babel-plugin-styled-components-px2vw
-
-[![npm version](https://badge.fury.io/js/babel-plugin-styled-components-px2vw.svg)](https://badge.fury.io/js/babel-plugin-styled-components-px2vw)
-![NPM Downloads](https://badgen.net/npm/dt/babel-plugin-styled-components-px2vw)
-[![Build Status](https://travis-ci.com/jackluson/babel-plugin-styled-components-px2vw.svg?branch=main)](https://travis-ci.com/jackluson/babel-plugin-styled-components-px2vw)
-[![codecov](https://codecov.io/gh/jackluson/babel-plugin-styled-components-px2vw/branch/main/graph/badge.svg)](https://codecov.io/gh/jackluson/babel-plugin-styled-components-px2vw)
-[![MIT](https://img.shields.io/github/license/jackluson/babel-plugin-styled-components-px2vw?style=plastic)](https://github.com/jackluson/babel-plugin-styled-components-px2vw/blob/main/LICENSE)
+# babel-plugin-styled-components-px2vw-8-plugin
 
 [English](README.md) | 中文
 
 [Babel 插件](https://babeljs.io/) 的主要功能是将 [styled-components](https://www.styled-components.com/)中的 px 单位转成 vw 单位。
 
-1. 使用 [postcss-px-to-viewport](https://github.com/evrone/postcss-px-to-viewport) 处理模板字符串中的所有 css 文本。
+1. 使用 [postcss-px-to-viewport-8-plugin](https://github.com/lkxian888/postcss-px-to-viewport-8-plugin) 处理模板字符串中的所有 css 文本。
 2. 在启用[transformRuntime](#transform-runtime)选项时将运行时`px2vw`函数 把嵌入在模板字符串中的 px 单位转成 vw 单位。
 
-它的灵感来自 [babel-plugin-styled-components-px2rem](https://github.com/xuyuanxiang/babel-plugin-styled-components-px2rem). 特此鸣谢
+它的灵感来自 [babel-plugin-styled-components-px2vw](https://github.com/jackluson/babel-plugin-styled-components-px2vw). 特此鸣谢
 
 ## 开始
 
@@ -21,11 +15,11 @@
 
 via npm
 
-`$ npm install babel-plugin-styled-components-px2vw --save-dev`
+`$ npm install babel-plugin-styled-components-px2vw-8-plugin --save-dev`
 
 or yarn
 
-`$ yarn add -D babel-plugin-styled-components-px2vw`
+`$ yarn add -D babel-plugin-styled-components-px2vw-8-plugin`
 
 ### 配置
 
@@ -35,7 +29,7 @@ babel.config.js:
 module.exports = {
   plugins: [
     [
-      'styled-components-px2vw',
+      'styled-components-px2vw-8-plugin',
       {
         unitToConvert: 'px',
         unitPrecision: 5,
@@ -52,7 +46,7 @@ or .babelrc:
 {
   "plugins": [
     [
-      "styled-components-px2vw",
+      "styled-components-px2vw-8-plugin",
       {
         "unitToConvert": 'px',
         "unitPrecision": 5,
@@ -69,7 +63,7 @@ or .babelrc:
 
 ```json
 {
-  "plugins": ["styled-components-px2vw", "styled-components"]
+  "plugins": ["styled-components-px2vw-8-plugin", "styled-components"]
 }
 ```
 
@@ -86,7 +80,7 @@ see [example](example)
 
 ### 配置选项
 
-> 配置选项参数与 [postcss-px-to-viewport](https://github.com/evrone/postcss-px-to-viewport)大致一样, 有少量选项参数不支持, 例如 `mediaQuery`、`landscape`
+> 配置选项参数与 [postcss-px-to-viewport-8-plugin](https://github.com/lkxian888/postcss-px-to-viewport-8-plugin)大致一样, 有少量选项参数不支持, 例如 `mediaQuery`、`landscape`
 
 | name             |        type        | required | default                                             |                                                                                                                                                                                                                                                                                                       description |
 | :--------------- | :----------------: | :------: | :-------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -94,7 +88,7 @@ see [example](example)
 | unitToConvert    |       string       |  false   | px                                                  |                                                                                                                                                                                                                                                                                        需要转换的单位，默认为"px" |
 | viewportWidth    |       number       |  false   | 750                                                 |                                                                                                                                                                                                                                                                                                  设计稿的视口宽度 |
 | unitPrecision    |       number       |  false   | 5                                                   |                                                                                                                                                                                                                                                                                              单位转换后保留的精度 |
-| propList         |      string[]      |  false   | ["*"]                                               |                                                                                                                                                               能转化为 vw 的属性列表.详细可看 [postcss-px-to-viewport propList opions](https://github.com/evrone/postcss-px-to-viewport/blob/master/README_CN.md) |
+| propList         |      string[]      |  false   | ["*"]                                               |                                                                                                                                                               能转化为 vw 的属性列表.详细可看 [postcss-px-to-viewport-8-plugin propList opions](https://github.com/lkxian888/postcss-px-to-viewport-8-plugin/blob/master/README.md) |
 | viewportUnit     |       string       |  false   | vw                                                  |                                                                                                                                                                                                                                                                                                希望使用的视口单位 |
 | fontViewportUnit |       string       |  false   | vw                                                  |                                                                                                                                                                                                                                                                                                字体使用的视口单位 |
 | minPixelValue    |       number       |  false   | 1                                                   |                                                                                                                                                                                                                                                        设置最小的转换数值，如果为 1 的话，只有大于 1 的值会被转换 |
@@ -476,4 +470,4 @@ const SizeableButton = styled.button(
 
 ### License
 
-This project is licensed under the [MIT License](https://github.com/jackluson/babel-plugin-styled-components-px2vw/blob/master/LICENSE).
+This project is licensed under the [MIT License](https://github.com/shenck215/babel-plugin-styled-components-px2vw-8-plugin/blob/main/LICENSE).

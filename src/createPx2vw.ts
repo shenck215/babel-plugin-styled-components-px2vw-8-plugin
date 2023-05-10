@@ -1,4 +1,6 @@
 import { identifier, Identifier, stringLiteral, numericLiteral, Statement } from '@babel/types';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import templateBuild from '@babel/template';
 import { IConfiguration } from './configuration';
 

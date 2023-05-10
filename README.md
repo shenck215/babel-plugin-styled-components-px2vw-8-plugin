@@ -1,19 +1,13 @@
-# babel-plugin-styled-components-px2vw
-
-[![npm version](https://badge.fury.io/js/babel-plugin-styled-components-px2vw.svg)](https://badge.fury.io/js/babel-plugin-styled-components-px2vw)
-![NPM Downloads](https://badgen.net/npm/dt/babel-plugin-styled-components-px2vw)
-[![Build Status](https://travis-ci.com/jackluson/babel-plugin-styled-components-px2vw.svg?branch=main)](https://travis-ci.com/jackluson/babel-plugin-styled-components-px2vw)
-[![codecov](https://codecov.io/gh/jackluson/babel-plugin-styled-components-px2vw/branch/main/graph/badge.svg)](https://codecov.io/gh/jackluson/babel-plugin-styled-components-px2vw)
-[![MIT](https://img.shields.io/github/license/jackluson/babel-plugin-styled-components-px2vw?style=plastic)](https://github.com/jackluson/babel-plugin-styled-components-px2vw/blob/main/LICENSE)
+# babel-plugin-styled-components-px2vw-8-plugin
 
 English | [中文](README_ZH.md)
 
 [Babel](https://babeljs.io/) plugin for convert `px` to `vw` units of [styled-components](https://www.styled-components.com/).
 
-1. Use [postcss-px-to-viewport](https://github.com/evrone/postcss-px-to-viewport) to process all css text in template strings.
+1. Use [postcss-px-to-viewport-8-plugin](https://github.com/lkxian888/postcss-px-to-viewport-8-plugin) to process all css text in template strings.
 2. Add a runtime `px2vw` function polyfill to process expression embedded in template strings when enable [transformRuntime](#transform-runtime) option.
 
-its inspiration comes from [babel-plugin-styled-components-px2rem](https://github.com/xuyuanxiang/babel-plugin-styled-components-px2rem). Thanks
+its inspiration comes from [babel-plugin-styled-components-px2vw](https://github.com/jackluson/babel-plugin-styled-components-px2vw). Thanks
 
 ## Getting Started
 
@@ -21,11 +15,11 @@ its inspiration comes from [babel-plugin-styled-components-px2rem](https://githu
 
 Add via npm
 
-`$ npm install babel-plugin-styled-components-px2vw --save-dev`
+`$ npm install babel-plugin-styled-components-px2vw-8-plugin --save-dev`
 
 or yarn
 
-`$ yarn add -D babel-plugin-styled-components-px2vw`
+`$ yarn add -D babel-plugin-styled-components-px2vw-8-plugin`
 
 ### Configuration
 
@@ -35,7 +29,7 @@ babel.config.js:
 module.exports = {
   plugins: [
     [
-      'styled-components-px2vw',
+      'styled-components-px2vw-8-plugin',
       {
         unitToConvert: 'px',
         unitPrecision: 5,
@@ -52,7 +46,7 @@ or .babelrc:
 {
   "plugins": [
     [
-      "styled-components-px2vw",
+      "styled-components-px2vw-8-plugin",
       {
         "unitToConvert": 'px',
         "unitPrecision": 5,
@@ -69,7 +63,7 @@ It should be put before [babel-plugin-styled-components](https://github.com/styl
 
 ```json
 {
-  "plugins": ["styled-components-px2vw", "styled-components"]
+  "plugins": ["styled-components-px2vw-8-plugin", "styled-components"]
 }
 ```
 
@@ -82,11 +76,11 @@ see [example](example)
 ### Online Demo
 
 click
-[react-boilerplate-typescript-mobile](https://jackluson.github.io/react-boilerplate-typescript-mobile/) and toggle device toolbar,see the style of the page,this is source code [repo](https://github.com/jackluson/react-boilerplate-typescript-mobile)
+[react-boilerplate-typescript-mobile](https://shenck215.github.io/react-boilerplate-typescript-mobile/) and toggle device toolbar,see the style of the page,this is source code [repo](https://github.com/shenck215/react-boilerplate-typescript-mobile)
 
 ### Options
 
-> The options of the plugin are based on some of the option of [postcss-px-to-viewport](https://github.com/evrone/postcss-px-to-viewport), but not all options properties work, such as `mediaQuery`、`landscape`
+> The options of the plugin are based on some of the option of [postcss-px-to-viewport-8-plugin](https://github.com/lkxian888/postcss-px-to-viewport-8-plugin), but not all options properties work, such as `mediaQuery`、`landscape`
 
 | name             |        type        | required | default                                             |                                                                                                                                                                                                                                                                           description |
 | :--------------- | :----------------: | :------: | :-------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -94,7 +88,7 @@ click
 | unitToConvert    |       string       |  false   | px                                                  |                                                                                                                                                                                                                                                                       unit to convert |
 | viewportWidth    |       number       |  false   | 750                                                 |                                                                                                                                                                                                                                                            The width of the viewport. |
 | unitPrecision    |       number       |  false   | 5                                                   |                                                                                                                                                                                                                                 The decimal numbers to allow the vw units to grow to. |
-| propList         |      string[]      |  false   | ["*"]                                               |                                                                                                                              The properties that can change from px to vw. more detail see [postcss-px-to-viewport propList opions](https://github.com/evrone/postcss-px-to-viewport) |
+| propList         |      string[]      |  false   | ["*"]                                               |                                                                                                                              The properties that can change from px to vw. more detail see [postcss-px-to-viewport-8-plugin propList opions](https://github.com/lkxian888/postcss-px-to-viewport-8-plugin/blob/master/README.md) |
 | viewportUnit     |       string       |  false   | vw                                                  |                                                                                                                                                                                                                                                                       Expected units. |
 | fontViewportUnit |       string       |  false   | vw                                                  |                                                                                                                                                                                                                                                              Expected units for font. |
 | minPixelValue    |       number       |  false   | 1                                                   |                                                                                                                                                                                                                                               Set the minimum pixel value to replace. |
@@ -476,4 +470,4 @@ const SizeableButton = styled.button(
 
 ### License
 
-This project is licensed under the [MIT License](https://github.com/jackluson/babel-plugin-styled-components-px2vw/blob/master/LICENSE).
+This project is licensed under the [MIT License](https://github.com/shenck215/babel-plugin-styled-components-px2vw-8-plugin/blob/main/LICENSE).

@@ -1,4 +1,4 @@
-const styledComponentsPx2Vw = require('babel-plugin-styled-components-px2vw/lib/index');
+const styledComponentsPx2Vw = require('babel-plugin-styled-components-px2vw-8-plugin/lib/index');
 module.exports = {
   presets: ['@babel/preset-react'],
   plugins: [

@@ -1,6 +1,6 @@
 {
-  "name": "babel-plugin-styled-components-px2vw",
-  "version": "1.6.0",
+  "name": "babel-plugin-styled-components-px2vw-8-plugin",
+  "version": "1.0.0",
   "author": "jackuson <18219112108@163.com>",
   "description": "Babel plugin for convert px to vw units of styled-components",
   "keywords": [
@@ -8,13 +8,13 @@
     "styled-components",
     "babel"
   ],
-  "homepage": "https://github.com/jackluson/babel-plugin-styled-components-px2vw",
+  "homepage": "https://github.com/shenck215/babel-plugin-styled-components-px2vw-8-plugin",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jackluson/babel-plugin-styled-components-px2vw.git"
+    "url": "git+https://github.com/shenck215/babel-plugin-styled-components-px2vw-8-plugin"
   },
   "bugs": {
-    "url": "https://github.com/jackluson/babel-plugin-styled-components-px2vw/issues"
+    "url": "https://github.com/shenck215/babel-plugin-styled-components-px2vw-8-plugin/issues"
   },
   "license": "MIT",
   "main": "lib/index.js",
@@ -35,7 +35,7 @@
   "peerDependencies": {
     "@babel/core": "^7.13.14",
     "postcss": "^8.2.9",
-    "postcss-px-to-viewport": "^1.1.1"
+    "postcss-px-to-viewport-8-plugin": "^1.2.2"
   },
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.13.0",

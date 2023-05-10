@@ -3,12 +3,14 @@
  * File: /src/index.ts
  * Project: node-typescript-template
  * File Created: Saturday, 3rd April 2021 1:26:29 pm
- * Author: luxuemin2108@gmail.com
+ * Author: shenck215@gmail.com
  * -----
  * Copyright (c) 2021 Camel Lu
  */
 import { ConfigAPI } from '@babel/core';
 import { declare } from '@babel/helper-plugin-utils';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { Visitor, NodePath } from '@babel/traverse';
 import createPx2vw from './createPx2vw';
 import {

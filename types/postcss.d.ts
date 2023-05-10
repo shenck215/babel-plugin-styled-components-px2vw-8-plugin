@@ -1,4 +1,4 @@
-declare module 'postcss-px-to-viewport' {
+declare module 'postcss-px-to-viewport-8-plugin' {
   import { PluginCreator } from 'postcss';
   import { IPx2VwOptions } from 'types/options';
 
