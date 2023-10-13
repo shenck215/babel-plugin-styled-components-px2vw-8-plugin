@@ -34,13 +34,12 @@
   },
   "peerDependencies": {
     "@babel/core": "^7.13.14",
-    "postcss": "^8.2.9",
-    "postcss-px-to-viewport-8-plugin": "^1.2.2"
+    "postcss": "^8.2.9"
   },
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.13.0",
     "memoizerific": "^1.11.3",
-    "postcss-px-to-viewport": "^1.1.1"
+    "postcss-px-to-viewport-8-plugin": "^1.2.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
